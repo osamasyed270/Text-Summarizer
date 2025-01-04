@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/styles.css">
+    <title>Text Summarizer</title>
+</head>
+<body>
+    <h1>Welcome to Text Summarizer</h1>
+    <a href="/train">Start Training</a>
+    <form action="/predict" method="post">
+        <label for="text">Enter text for summarization:</label>
+        <textarea id="text" name="text" rows="4" cols="50"></textarea>
+        <button type="submit">Summarize</button>
+    </form>
+</body>
+</html>
