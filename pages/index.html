@@ -7,12 +7,24 @@
     <title>Text Summarizer</title>
 </head>
 <body>
-    <h1>Welcome to Text Summarizer</h1>
-    <a href="/train">Start Training</a>
-    <form action="/predict" method="post">
-        <label for="text">Enter text for summarization:</label>
-        <textarea id="text" name="text" rows="4" cols="50"></textarea>
-        <button type="submit">Summarize</button>
-    </form>
+    <div class="container home-container">
+        <div class="inner-container">
+            <h1 class="main-heading">Text Summarizer</h1>
+            <form action="/predict" method="post">
+                <div class="textarea-container">
+                    <div class="textarea-inner-container">
+                        <textarea name="text" id="text"></textarea>
+                        <div class="textarea-overlay-info">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="none" stroke="#7F684F" stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M9.478 3H7.25A2.25 2.25 0 0 0 5 5.25v13.5A2.25 2.25 0 0 0 7.25 21h9a2.25 2.25 0 0 0 2.25-2.25V12M9.478 3c1.243 0 2.272 1.007 2.272 2.25V7.5A2.25 2.25 0 0 0 14 9.75h2.25A2.25 2.25 0 0 1 18.5 12M9.478 3c3.69 0 9.022 5.36 9.022 9M9 16.5h6m-6-3h4"/></svg>
+                            <p>Paste text here</p>
+                        </div>
+                    </div>
+                </div>
+                <button type="submit" class="submit-btn">Summarize</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="/static/script.js"></script>
 </body>
 </html>
